@@ -1,0 +1,24 @@
+PODS:
+  - PromisesObjC (1.2.8)
+  - PromisesSwift (1.2.8):
+    - PromisesObjC (= 1.2.8)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - PromisesSwift (~> 1.2)
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - PromisesObjC
+    - PromisesSwift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  PromisesSwift: 37bad6f4daddb02f7c9c531efe91e8b21c13ee2f
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: db3cca93e2fa78b5196bd2e0b0e24966dc390b2e
+
+COCOAPODS: 1.8.4

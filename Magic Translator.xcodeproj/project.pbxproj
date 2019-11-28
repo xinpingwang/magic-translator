@@ -3,15 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A489855C56461D584DCEBA4 /* Pods_Magic_Translator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2E700AA97635F7D3D5CADE /* Pods_Magic_Translator.framework */; };
 		660D64AF238BD5B400C0995F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660D64AE238BD5B400C0995F /* MenuViewController.swift */; };
 		66BC1F45238BBCCD0014B220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BC1F44238BBCCD0014B220 /* AppDelegate.swift */; };
 		66BC1F47238BBCCD0014B220 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BC1F46238BBCCD0014B220 /* ViewController.swift */; };
 		66BC1F49238BBCCE0014B220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66BC1F48238BBCCE0014B220 /* Assets.xcassets */; };
 		66BC1F4C238BBCCE0014B220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66BC1F4A238BBCCE0014B220 /* Main.storyboard */; };
+		66CD972C238E39F7006875E7 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD972A238E39F7006875E7 /* HttpRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,10 @@
 		66BC1F4B238BBCCE0014B220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66BC1F4D238BBCCE0014B220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66BC1F4E238BBCCE0014B220 /* Magic_Translator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Magic_Translator.entitlements; sourceTree = "<group>"; };
+		66CD972A238E39F7006875E7 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		6E9AEDC7C309977D04E37574 /* Pods-Magic Translator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Magic Translator.debug.xcconfig"; path = "Target Support Files/Pods-Magic Translator/Pods-Magic Translator.debug.xcconfig"; sourceTree = "<group>"; };
+		8609E846A21125FB776488AE /* Pods-Magic Translator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Magic Translator.release.xcconfig"; path = "Target Support Files/Pods-Magic Translator/Pods-Magic Translator.release.xcconfig"; sourceTree = "<group>"; };
+		CB2E700AA97635F7D3D5CADE /* Pods_Magic_Translator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Magic_Translator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +36,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A489855C56461D584DCEBA4 /* Pods_Magic_Translator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F67514B25994A68DD9FC08E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB2E700AA97635F7D3D5CADE /* Pods_Magic_Translator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		66BC1F38238BBCCD0014B220 = {
 			isa = PBXGroup;
 			children = (
 				66BC1F43238BBCCD0014B220 /* Magic Translator */,
 				66BC1F42238BBCCD0014B220 /* Products */,
+				D292D8E45A5065C285B445CD /* Pods */,
+				1F67514B25994A68DD9FC08E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +72,7 @@
 		66BC1F43238BBCCD0014B220 /* Magic Translator */ = {
 			isa = PBXGroup;
 			children = (
+				66CD972A238E39F7006875E7 /* HttpRequest.swift */,
 				66BC1F44238BBCCD0014B220 /* AppDelegate.swift */,
 				66BC1F46238BBCCD0014B220 /* ViewController.swift */,
 				66BC1F48238BBCCE0014B220 /* Assets.xcassets */,
@@ -66,6 +84,15 @@
 			path = "Magic Translator";
 			sourceTree = "<group>";
 		};
+		D292D8E45A5065C285B445CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E9AEDC7C309977D04E37574 /* Pods-Magic Translator.debug.xcconfig */,
+				8609E846A21125FB776488AE /* Pods-Magic Translator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66BC1F51238BBCCE0014B220 /* Build configuration list for PBXNativeTarget "Magic Translator" */;
 			buildPhases = (
+				0B26664C95E162AB2D14189A /* [CP] Check Pods Manifest.lock */,
 				66BC1F3D238BBCCD0014B220 /* Sources */,
 				66BC1F3E238BBCCD0014B220 /* Frameworks */,
 				66BC1F3F238BBCCD0014B220 /* Resources */,
+				316886C8450D08B40B9EBD26 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -98,6 +127,11 @@
 				TargetAttributes = {
 					66BC1F40238BBCCD0014B220 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -131,12 +165,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B26664C95E162AB2D14189A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Magic Translator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		316886C8450D08B40B9EBD26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Magic Translator/Pods-Magic Translator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Magic Translator/Pods-Magic Translator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Magic Translator/Pods-Magic Translator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		66BC1F3D238BBCCD0014B220 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				66BC1F47238BBCCD0014B220 /* ViewController.swift in Sources */,
+				66CD972C238E39F7006875E7 /* HttpRequest.swift in Sources */,
 				660D64AF238BD5B400C0995F /* MenuViewController.swift in Sources */,
 				66BC1F45238BBCCD0014B220 /* AppDelegate.swift in Sources */,
 			);
@@ -273,9 +350,9 @@
 		};
 		66BC1F52238BBCCE0014B220 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E9AEDC7C309977D04E37574 /* Pods-Magic Translator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Magic Translator/Magic_Translator.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Magic Translator/Info.plist";
@@ -283,6 +360,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.magicdone.translator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -291,9 +369,9 @@
 		};
 		66BC1F53238BBCCE0014B220 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8609E846A21125FB776488AE /* Pods-Magic Translator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Magic Translator/Magic_Translator.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Magic Translator/Info.plist";
@@ -301,6 +379,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.magicdone.translator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

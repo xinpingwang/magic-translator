@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Magic Translator/Pods-Magic Translator-frameworks.sh
+${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework
+${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
