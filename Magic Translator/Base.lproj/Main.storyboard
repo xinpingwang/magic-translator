@@ -748,35 +748,34 @@
                                         <rect key="frame" x="0.0" y="146" width="280" height="28"/>
                                         <subviews>
                                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cn8-er-ulx">
-                                                <rect key="frame" x="6" y="-3" width="77" height="32"/>
+                                                <rect key="frame" x="6" y="-3" width="65" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="RX4-Ao-Gcl"/>
                                                 </constraints>
-                                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="QUc-8g-o2o" id="fD7-wE-L5F">
+                                                <popUpButtonCell key="cell" type="push" title="自动" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="QUc-8g-o2o" id="fD7-wE-L5F">
                                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="menu"/>
                                                     <menu key="menu" id="SuD-OQ-70y">
                                                         <items>
-                                                            <menuItem title="Item 1" state="on" id="QUc-8g-o2o"/>
-                                                            <menuItem title="Item 2" id="9SC-98-Mv4"/>
-                                                            <menuItem title="Item 3" id="DZp-vO-Xo6"/>
+                                                            <menuItem title="自动" state="on" id="QUc-8g-o2o"/>
+                                                            <menuItem title="英语" tag="1" id="9SC-98-Mv4"/>
+                                                            <menuItem title="中文" tag="2" id="DZp-vO-Xo6"/>
                                                         </items>
                                                     </menu>
                                                 </popUpButtonCell>
                                             </popUpButton>
                                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tbo-fD-cXp">
-                                                <rect key="frame" x="96" y="-3" width="77" height="32"/>
+                                                <rect key="frame" x="96" y="-3" width="65" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="5JP-jH-1kF"/>
                                                 </constraints>
-                                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="KOj-EA-AtV" id="fj1-eY-wU8">
+                                                <popUpButtonCell key="cell" type="push" title="中文" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="2" imageScaling="proportionallyDown" inset="2" selectedItem="KOj-EA-AtV" id="fj1-eY-wU8">
                                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="menu"/>
                                                     <menu key="menu" id="fhK-Gk-YdZ">
                                                         <items>
-                                                            <menuItem title="Item 1" state="on" id="KOj-EA-AtV"/>
-                                                            <menuItem title="Item 2" id="l0s-WC-LOM"/>
-                                                            <menuItem title="Item 3" id="lM0-xH-why"/>
+                                                            <menuItem title="中文" state="on" tag="2" keyEquivalent="s" id="KOj-EA-AtV"/>
+                                                            <menuItem title="英语" tag="1" id="l0s-WC-LOM"/>
                                                         </items>
                                                     </menu>
                                                 </popUpButtonCell>

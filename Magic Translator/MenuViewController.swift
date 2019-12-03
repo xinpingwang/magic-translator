@@ -20,21 +20,20 @@ class MenuViewController: NSViewController {
     
     @IBOutlet var translateButton: NSButton!
     
-//    let defaultSession = URLSession(configuration: .default)
-//    var dataTask: URLSessionDataTask?
+    let avaliableLanguages = ["auto", "en", "zh-CN"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
     
-    func translate(fromText: String) {
+    func translate(fromText: String, fromLanguage: String, toLanguage: String) {
         
         let request = HttpRequest()
         request.get(url: "https://translate.googleapis.com/translate_a/single", params: [
             "client": "gtx",
-            "sl": "auto",
-            "tl": "zh-CN",
+            "sl": fromLanguage,
+            "tl": toLanguage,
             "dt": "t",
             "q": fromText])
             .then { httpResponse in
@@ -53,8 +52,10 @@ class MenuViewController: NSViewController {
 
     @IBAction func translateButtonClicked(_ sender: NSButton) {
         let fromText = fromTextView.string
+        let fromLanguage = avaliableLanguages[fromLanguageButton.selectedItem!.tag]
+        let toLanguage = avaliableLanguages[toLanguageButton.selectedItem!.tag]
         if (fromText.count > 0) {
-            translate(fromText: fromText)
+            translate(fromText: fromText, fromLanguage: fromLanguage, toLanguage: toLanguage)
         } else {
             toTextView.string = ""
         }
