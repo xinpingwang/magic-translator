@@ -774,7 +774,9 @@
                                                     <font key="font" metaFont="menu"/>
                                                     <menu key="menu" id="fhK-Gk-YdZ">
                                                         <items>
-                                                            <menuItem title="中文" state="on" tag="2" keyEquivalent="s" id="KOj-EA-AtV"/>
+                                                            <menuItem title="中文" state="on" tag="2" id="KOj-EA-AtV">
+                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                            </menuItem>
                                                             <menuItem title="英语" tag="1" id="l0s-WC-LOM"/>
                                                         </items>
                                                     </menu>
